@@ -14,7 +14,7 @@ public class ExcelUtil {
 	private static Workbook book;
 	private static Sheet sheet;
 
-	public static String TEST_DATA_SHEET_PATH = "./src/main/java/com/qa/hubspot/testdata/TutorialsNinjaTestData.xlsx";
+	public static String TEST_DATA_SHEET_PATH = "./src/main/java/com/qa/Testdata/TutorialsNinjaTestData.xlsx";
 
 	public static Object[][] getTestData(String sheetName) {
 		Object data[][] = null;

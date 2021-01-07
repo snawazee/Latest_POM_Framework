@@ -11,7 +11,7 @@
 			class-name="com.qa.TestListeners.TestAllureListener" />
 
 		<listener
-			class-name="com.qa.hubspotTestListeners.TesultsListener" />
+			class-name="com.qa.TestListeners.TesultsListener" />
 	</listeners>
 
 	<test name="LoginPage Test_FF_80">
