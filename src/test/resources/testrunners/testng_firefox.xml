@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TN Test automtion regression suite" parallel="tests"
+	thread-count="6">
+
+	<listeners>
+		<listener
+			class-name="com.qa.TestListeners.ExtentReportListener" />
+		<listener
+			class-name="com.qa.TestListeners.TestAllureListener" />
+
+		<listener
+			class-name="com.qa.TestListeners.TesultsListener" />
+	</listeners>
+
+	<test name="LoginPage Test_FF_80">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="80" />
+		<classes>
+			<class name="com.qa.Tests.LoginPageTest" />
+		</classes>
+	</test>
+
+	<test name="LoginPage Test_FF_83">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="83" />
+		<classes>
+			<class name="com.qa.Tests.LoginPageTest" />
+		</classes>
+	</test>
+
+	<test name="LoginPage Test_FF_57">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="57" />
+		<classes>
+			<class name="com.qa.Tests.LoginPageTest" />
+		</classes>
+	</test>
+
+	<test name="AccountsPage Test_FF_80">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="80" />
+		<classes>
+			<class name="com.qa.Tests.AccountsPageTest" />
+		</classes>
+	</test>
+
+	<test name="AccountsPage Test_FF_83">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="83" />
+		<classes>
+			<class name="com.qa.Tests.AccountsPageTest" />
+		</classes>
+	</test>
+
+	<test name="AccountsPage Test_FF_57">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="57" />
+		<classes>
+			<class name="com.qa.Tests.AccountsPageTest" />
+		</classes>
+	</test>
+
+
+	<test name="ProductInfoPage Test_FF_80">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="80" />
+		<classes>
+			<class name="com.qa.Tests.ProductInfoTest" />
+		</classes>
+	</test>
+
+	<test name="ProductInfoPage Test_FF_83">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="83" />
+		<classes>
+			<class name="com.qa.Tests.ProductInfoTest" />
+		</classes>
+	</test>
+
+	<test name="ProductInfoPage Test_FF_57">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="57" />
+		<classes>
+			<class name="com.qa.Tests.ProductInfoTest" />
+		</classes>
+	</test>
+
+
+
+
+</suite>

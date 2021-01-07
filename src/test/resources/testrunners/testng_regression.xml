@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TN Test automtion regression suite" parallel="tests"
+	thread-count="6">
+
+	<listeners>
+		<listener
+			class-name="com.qa.TestListeners.ExtentReportListener" />
+		<listener
+			class-name="com.qa.TestListeners.TestAllureListener" />
+
+		<listener
+			class-name="com.qa.hubspotTestListeners.TesultsListener" />
+	</listeners>
+
+	<test name="LoginPage Test_FF_80">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="80" />
+		<classes>
+			<class name="com.qa.Tests.LoginPageTest" />
+		</classes>
+	</test>
+
+
+	<test name="AccountsPage Test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="80" />
+
+		<classes>
+			<class name="com.qa.Tests.AccountsPageTest" />
+		</classes>
+	</test>
+
+	<test name="ProductInfoPage Test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="80" />
+
+		<classes>
+			<class name="com.qa.Tests.ProductInfoTest" />
+		</classes>
+	</test>
+	
+	<test name="RegisterPage Test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="80" />
+
+		<classes>
+			<class name="com.qa.Tests.RegisterPageTest" />
+		</classes>
+	</test>
+
+
+
+</suite>
